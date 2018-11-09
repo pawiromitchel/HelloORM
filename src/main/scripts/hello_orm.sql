@@ -1,5 +1,5 @@
-create database student;
-use student;
+create database hello_orm;
+use hello_orm;
 
 CREATE TABLE student (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
