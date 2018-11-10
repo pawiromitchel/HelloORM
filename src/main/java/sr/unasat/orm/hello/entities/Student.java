@@ -12,7 +12,7 @@ public class Student {
     private String firstname;
     @Column
     private String lastname;
-    @Column
+    @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
 
     @Override

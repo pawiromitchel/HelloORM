@@ -6,7 +6,7 @@ import sr.unasat.orm.hello.entities.Student;
 
 import java.util.List;
 
-public class MainApp {
+public class Application {
   public static void main(String[] args) {
     StudentDAO studentDAO = new StudentDAO();
     List<Student> studentList = studentDAO.retrieveStudentList();
