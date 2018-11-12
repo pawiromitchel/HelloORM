@@ -7,8 +7,9 @@ import sr.unasat.orm.hello.entities.Student;
 import java.util.List;
 
 public class Application {
+
   public static void main(String[] args) {
-    StudentDAO studentDAO = new StudentDAO();
+    StudentDAO studentDAO = new StudentDAO(JPAConfiguration.getEntityManager());
     List<Student> studentList = studentDAO.retrieveStudentList();
     studentList.stream().forEach(System.out::println);
     JPAConfiguration.shutdown();
